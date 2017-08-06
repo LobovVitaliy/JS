@@ -1,0 +1,53 @@
+@media only screen and (max-width : 1260px) {
+  #flex-container {
+    height: 325px;
+  }
+}
+
+@media only screen and (max-width : 1111px) {
+  #flex-container {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+  .flex-block {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width : 725px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    height: 85px;
+  }
+  .buttons input {
+    width: 50%;
+  }
+  .error-field {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width : 700px) {
+  .data-field {
+    flex-direction: column;
+  }
+  .name {
+    align-self: flex-start;
+    margin: 0;
+  }
+  .data-field input {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width : 500px) {
+  .buttons input {
+    width: 230px;
+  }
+  .error-field {
+    align-self: flex-start;
+  }
+}

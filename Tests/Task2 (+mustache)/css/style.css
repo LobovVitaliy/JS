@@ -1,0 +1,75 @@
+html, body {
+  background-color: rgb(220, 245, 250);
+  min-width: 350px;
+}
+
+hr {
+  width: 50%;
+}
+
+.main {
+  height: 120px;
+}
+
+.task {
+  height: 90px;
+}
+
+.task-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.task-wrap, .buttons {
+  width: 50%;
+  display: flex;
+}
+
+.task-field {
+  width: 80%;
+}
+
+.input-field {
+  display: flex;
+}
+
+.button-field {
+  width: 20%;
+  display: flex;
+}
+
+.buttons-field {
+  display: flex;
+  align-content: center;
+}
+
+input {
+  font-size: 20px;
+  outline: none;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+input[type="button"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: rgba(199, 190, 239, 0.3);
+}
+
+.btn-ready {
+  background-color: rgb(50, 148, 85);
+  color: white;
+}
+
+.btn-not-ready {
+  background-color: rgb(230, 60, 60);
+  color: white;
+}
