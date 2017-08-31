@@ -1,0 +1,10 @@
+.IconBlock {
+    float: right;
+}
+
+@media(max-width:991px) {
+    .IconBlock {
+        /* float: none; */
+        /* margin: 0 auto; */
+    }
+}

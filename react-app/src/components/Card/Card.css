@@ -1,0 +1,13 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+}
+
+.Card-img {
+    background: #00BC9B;
+}
+
+.Card-img img {
+    width: 100%;
+}
+

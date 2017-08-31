@@ -1,0 +1,34 @@
+.GetInTouch {
+    height: 483px;
+}
+
+.GetInTouch-main {
+    /* margin-top: -10px; */
+}
+
+.GetInTouch-text {
+    margin-top: 15px;
+    padding: 0 16.25% 0 16.25%;
+    line-height: 34px;
+    word-spacing: 1.5px;
+}
+
+.GetInTouch-btn {
+    margin-top: 38px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+}
+
+@media (max-width:767px) {
+    .GetInTouch-text {
+        padding: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .GetInTouch {
+        height: 100%;
+        padding: 50px 0;
+    }
+}

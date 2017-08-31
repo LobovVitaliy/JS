@@ -1,0 +1,62 @@
+/* fontello */
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/Fontello/fontello.eot?84782568');
+    src: url('../fonts/Fontello/fontello.eot?84782568#iefix') format('embedded-opentype'),
+         url('../fonts/Fontello/fontello.woff2?84782568') format('woff2'),
+         url('../fonts/Fontello/fontello.woff?84782568') format('woff'),
+         url('../fonts/Fontello/fontello.ttf?84782568') format('truetype'),
+         url('../fonts/Fontello/fontello.svg?84782568#fontello') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Lato-Black */
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Black.eot');
+    src: url('../fonts/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato/Lato-Black.woff2') format('woff2'),
+         url('../fonts/Lato/Lato-Black.woff') format('woff'),
+         url('../fonts/Lato/Lato-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+}
+/* Lato-Bold */
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Bold.eot');
+    src: url('../fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato/Lato-Bold.woff2') format('woff2'),
+         url('../fonts/Lato/Lato-Bold.woff') format('woff'),
+         url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* SourceSansPro-Regular */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url("../fonts/SourceSansPro/SourceSansPro-Regular.eot");
+    src: url('../fonts/SourceSansPro/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf.woff2') format('woff2'),
+         url('../fonts/SourceSansPro/SourceSansPro-Regular.otf.woff') format('woff'),
+         url('../fonts/SourceSansPro/SourceSansPro-Regular.otf') format('opentype'),
+         url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+/* SourceSansPro-Bold */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url("../fonts/SourceSansPro/SourceSansPro-Bold.eot");
+    src: url('../fonts/SourceSansPro/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SourceSansPro/SourceSansPro-Bold.ttf.woff2') format('woff2'),
+         url('../fonts/SourceSansPro/SourceSansPro-Bold.otf.woff') format('woff'),
+         url('../fonts/SourceSansPro/SourceSansPro-Bold.otf') format('opentype'),
+         url('../fonts/SourceSansPro/SourceSansPro-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}

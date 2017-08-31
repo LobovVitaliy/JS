@@ -1,0 +1,38 @@
+.MainHeaderH {
+    height: 113px;
+    border-top: 1px solid #e6e9ed;
+    border-bottom: 1px solid #e6e9ed;
+}
+
+.MainHeaderH-grid {
+    height: 100%;
+}
+
+.MainHeaderH-nav {
+    margin-left: 30px;
+}
+
+.MainHeaderH-list {
+    display: flex;
+}
+
+.MainHeaderH-item:last-child {
+    margin-left: auto;
+}
+
+.MainHeaderH-link {
+    padding: 15px 20px;
+    border: 1px solid transparent;
+}
+
+.MainHeaderH-link:hover {
+    background: #f5f7fa;
+    border-color: #e6e9ed;
+    border-radius: 3px;
+}
+
+@media(max-width:1199px) {
+    .MainHeaderH {
+        height: 90px;
+    }
+}

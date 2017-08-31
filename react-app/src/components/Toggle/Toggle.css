@@ -1,0 +1,17 @@
+.Toggle {
+    padding: 14px;
+    float: right;
+}
+
+.Toggle-line::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.Toggle-line:not(:first-child)::before {
+    margin-top: 1px;
+}

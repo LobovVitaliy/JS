@@ -1,0 +1,12 @@
+.Content {
+    margin-top: 21px;
+    color: #a3b1bf;
+}
+
+.Content-text {
+    margin-top: -7px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    color: inherit;
+}

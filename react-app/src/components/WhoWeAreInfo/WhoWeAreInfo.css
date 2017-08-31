@@ -1,0 +1,25 @@
+.WhoWeAreInfo-logo {
+    margin-bottom: 25px;
+}
+
+.WhoWeAreInfo-more {
+    margin-top: 15px;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+
+.WhoWeAreInfo-more a::after {
+    content: '';
+    display: inline-block;
+    background: url('../../img/icons.png');
+    background-position: -20px -15px;
+    width: 10px;
+    height: 8px;
+    margin-left: 7px;
+}
+
+.WhoWeAreInfo-more a:hover::after {
+    background-position-y: -30px;
+}

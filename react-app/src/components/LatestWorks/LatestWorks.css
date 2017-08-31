@@ -1,0 +1,54 @@
+.LatestWorks {
+    height: 1270px;
+    background: #f2f5f7;
+}
+
+.LatestWorks-main {
+    /* margin-top: -10px; */
+}
+
+.LatestWorks-title {
+    letter-spacing: 0.3px;
+}
+
+.LatestWorks-text {
+    margin-top: 18px;
+    padding: 0 16.25% 0 16.25%;
+    letter-spacing: 0.25px;
+}
+
+.LatestWorks-cards {
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.LatestWorks-list {
+    margin-top: 80px;
+}
+
+.LatestWorks-item {
+    width: 100%;
+    pointer-events: none;
+}
+
+.LatestWorks-pagination {
+    margin-top: 37px;
+}
+
+@media (max-width:1199px) {
+    .LatestWorks {
+        height: 100%;
+        padding: 50px 0;
+    }
+}
+
+@media (max-width:767px) {
+    .LatestWorks-text {
+        padding: 0;
+    }
+    .LatestWorks-cards > :last-child,
+    .LatestWorks-list {
+        margin-top: 50px;
+    }
+}
