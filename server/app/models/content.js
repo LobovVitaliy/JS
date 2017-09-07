@@ -4,23 +4,20 @@ const db = require('../mongodb');
 
 const Content = {
 	get: () => {
-		return db.content.findOne();
+		return db.content.find();
+	},
+	getById: (id) => {
+		return db.content.find({ _id: db.ObjectId(id) });
 	},
 	insert: (data) => {
-		let inserted = Object.assign({}, data, {
-			_id: db.ObjectId(data._id) 
-		});
-		return db.content.save(inserted);
+		return db.content.insert(data);
 	},
-	// update: (data) => {
-	// 	return db.content.findAndModify({
-	// 		update: { $set: data }
-	// 	})
-	// 	.then(res => res.value)
-	// 	.catch(err => {
-	// 		throw new Error('Cannot update');
-	// 	});
-	// }
+	update: (id, data) => {
+		return db.content.update({ _id: db.ObjectId(id) }, data);
+	},
+	delete: (id) => {
+		return db.content.remove({ _id: db.ObjectId(id) });
+	}
 };
 
 module.exports = Content;
