@@ -1,10 +1,10 @@
 'use strict';
 
-const Content = require('../models/content');
+const Model = require('../models/admin');
 
-const ContentController = {
+const Controller = {
 	get: (req, res) => {
-		Content.get()
+		Model.get(req.params)
 			.then(list => {
 				res.setHeader('x-total-count', list.length);
 				return res.json(list);
@@ -12,30 +12,29 @@ const ContentController = {
 			.catch(err => res.status(500).end(String(err)));
 	},
 	getById: (req, res) => {
-		Content.getById(req.params.id)
+		Model.getById(req.params)
 			.then(data => res.json(data))
 			.catch(err => res.status(500).end(String(err)));
 	},
 	insert: (req, res) => {
-		Content.insert(req.body)
+		Model.insert(req.params.collection, req.body)
 			.then(data => res.json(data))
 			.catch(err => res.status(500).end(String(err)));
 	},
 	update: (req, res) => {
-		let id = req.params.id;
 		let updates = req.body;
 		delete updates.id;
 		delete updates._id;
 
-		Content.update(id, updates)
+		Model.update(req.params, updates)
 			.then(data => res.json(data))
 			.catch(err => res.status(500).end(String(err)));
 	},
 	delete: (req, res) => {
-		Content.delete(req.params.id)
+		Model.delete(req.params)
 			.then(data => res.json(data))
 			.catch(err => res.status(500).end(String(err)));
 	}
 };
 
-module.exports = ContentController;
+module.exports = Controller;

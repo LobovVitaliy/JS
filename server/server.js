@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 const PORT = process.env.PORT || 8080;
 
 // register our routes
-app.use('/api/v1', require('./app/routes'));
+app.use('/', require('./app/routes'));
 
 // start the server
 app.listen(PORT);
