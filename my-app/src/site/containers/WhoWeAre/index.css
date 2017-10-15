@@ -1,0 +1,68 @@
+/* WhoWeAre */
+.WhoWeAre {
+    min-height: 520px;
+    padding: 100px 0 70px 0;
+}
+.WhoWeAre-title {
+    letter-spacing: 0.4px;
+}
+.WhoWeAre-text {
+    margin-top: 15px;
+    padding: 0 16.25% 0 16.25%;
+    line-height: 34px;
+    word-spacing: 1.5px;
+}
+.WhoWeAre-list {
+    margin-top: 74px;
+}
+
+.heart {
+    background: url('../../img/info-icons.png');
+    background-position: 0 0;
+    width: 62px; /* original 61px */
+    height: 53px;
+}
+.lightbulb {
+    background: url('../../img/info-icons.png');
+    background-position: -62px 0;
+    width: 46px;
+    height: 65px;
+}
+.star {
+    background: url('../../img/info-icons.png');
+    background-position: -109px 0;
+    width: 56px;
+    height: 53px;
+}
+
+@media(max-width:991px) {
+    .WhoWeAre-list > :not(:first-child) {
+        margin-top: 35px;
+    }
+}
+
+@media(max-width:768px) {
+    .WhoWeAre-text {
+        padding: 0;
+    }
+}
+
+/* IconBlock */
+.IconBlock {
+    float: right;
+}
+
+/* IconInfo */
+.IconInfo-title {
+    text-align: left;
+    font-size: 26px;
+    line-height: 27px;
+    letter-spacing: 0.8px;
+}
+.IconInfo-text {
+    text-align: left;
+    margin-top: 21px;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.15px;
+}

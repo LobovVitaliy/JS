@@ -1,0 +1,76 @@
+/* LatestWorks */
+.LatestWorks {
+    min-height: 1100px;
+    background: #f2f5f7;
+    padding: 85px 0 85px 0;
+}
+.LatestWorks-title {
+    letter-spacing: 0.3px;
+}
+.LatestWorks-text {
+    margin-top: 18px;
+    padding: 0 16.25% 0 16.25%;
+    letter-spacing: 0.25px;
+}
+.LatestWorks-cards {
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.LatestWorks-list {
+    margin-top: 80px;
+}
+.LatestWorks-item {
+    width: 100%;
+    pointer-events: none;
+}
+.LatestWorks-pagination {
+    margin-top: 37px;
+}
+
+@media (max-width:767px) {
+    .LatestWorks-text {
+        padding: 0;
+    }
+    .LatestWorks-cards > :last-child,
+    .LatestWorks-list {
+        margin-top: 50px;
+    }
+}
+
+/* Card */
+.Card {
+    display: flex;
+    flex-direction: column;
+}
+.Card-img {
+    background: #00BC9B;
+}
+.Card-img img {
+    width: 100%;
+}
+
+/* CardInfo */
+.CardInfo {
+    padding: 30px 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    border-width: 0 1px 2px 1px;
+    border-style: solid;
+    border-color: #e6e9ed;
+    text-align: center;
+}
+.CardInfo-title {
+    flex-grow: 1;
+    padding: 0 10px;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+}
+.CardInfo-text {
+    padding: 0 8% 0 8%;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}

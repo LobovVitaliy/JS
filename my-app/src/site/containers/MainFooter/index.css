@@ -1,0 +1,35 @@
+/* MainFooter */
+.MainFooter {
+    min-height: 325px;
+    background: #2f4052;
+    padding: 35px 0 35px 0;
+}
+
+@media (max-width:991px) {
+    .MainFooter-main > :nth-last-child(-n+2) {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:768px) {
+    .MainFooter {
+        height: 100%;
+    }
+    .MainFooter-main > :nth-child(2) {
+        margin-top: 50px;
+    }
+}
+
+/* Content */
+.Content {
+    margin-top: 21px;
+    color: #a3b1bf;
+}
+.Content-text {
+    margin-top: -7px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    color: inherit;
+    text-align: left;
+}

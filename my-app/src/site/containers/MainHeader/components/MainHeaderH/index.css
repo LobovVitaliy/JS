@@ -1,0 +1,50 @@
+/* MainHeaderH */
+.MainHeaderH {
+    height: 113px;
+    border-top: 1px solid #e6e9ed;
+    border-bottom: 1px solid #e6e9ed;
+}
+.MainHeaderH-grid {
+    height: 100%;
+}
+.MainHeaderH-nav {
+    margin-left: 30px;
+}
+.MainHeaderH-list {
+    display: flex;
+}
+.MainHeaderH-item:last-child {
+    margin-left: auto;
+}
+.MainHeaderH-link {
+    padding: 15px 20px;
+    border: 1px solid transparent;
+}
+.MainHeaderH-link:hover {
+    background: #f5f7fa;
+    border-color: #e6e9ed;
+    border-radius: 3px;
+}
+
+@media(max-width:1199px) {
+    .MainHeaderH {
+        height: 90px;
+    }
+}
+
+/* Toggle */
+.Toggle {
+    padding: 14px;
+    float: right;
+}
+.Toggle-line::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
+.Toggle-line:not(:first-child)::before {
+    margin-top: 1px;
+}

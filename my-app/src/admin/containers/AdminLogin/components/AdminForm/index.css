@@ -1,0 +1,15 @@
+/* AdminForm */
+.AdminForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.AdminForm-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #0f5075;
+}
+.AdminForm-btn {
+    height: 40px;
+}

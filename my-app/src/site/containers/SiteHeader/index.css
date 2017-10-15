@@ -1,0 +1,10 @@
+/* SiteHeader */
+.SiteHeader {
+    height: 40px;
+    background: #f5f7fa;
+    font-size: 12px;
+}
+.SiteHeader-grid,
+.SiteHeader-main {
+    height: 100%;
+}

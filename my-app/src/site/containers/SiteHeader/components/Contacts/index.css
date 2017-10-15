@@ -1,0 +1,27 @@
+/* Contacts */
+.Contacts > * {
+    width: auto;
+}
+.Contacts > *::before {
+    content: '';
+    display: inline-block;
+    background: url('../../../../img/icons.png');
+    margin-right: 9px;
+}
+.Contacts-mail::before {
+    background-position: 0 0;
+    width: 11px;
+    height: 9px;
+}
+.Contacts-mail:hover::before {
+    background-position: 0 -30px;
+}
+.Contacts-phone {
+    margin-left: 27px;
+}
+.Contacts-phone::before {
+    margin-bottom: -2px;
+    background-position: -12px 0;
+    width: 7px;
+    height: 13px;
+}

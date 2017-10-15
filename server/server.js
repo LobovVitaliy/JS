@@ -1,21 +1,18 @@
 'use strict';
 
-const express    = require('express');
-const bodyParser = require('body-parser');
-const morgan     = require('morgan');
-const app        = express();
+const express = require('express');
+const app = express();
+const settings = require('./app/config/settings');
 
 // configure app
-app.use(morgan('dev'));
+require('./app/config')(app);
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// connect mongodb
+require('./app/mongodb')();
 
-const PORT = process.env.PORT || 8080;
-
-// register our routes
-app.use('/', require('./app/routes'));
+// register routes
+require('./app/routes')(app);
 
 // start the server
-app.listen(PORT);
-console.log('Server is listening at %s', PORT);
+app.listen(settings.port);
+console.log('Server is listening at %s', settings.port);
