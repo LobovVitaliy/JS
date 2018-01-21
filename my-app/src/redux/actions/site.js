@@ -28,14 +28,13 @@ export const SET_CARD_TEXT = 'SET_CARD_TEXT';
 export const SET_TOTAL_TITLE = 'SET_TOTAL_TITLE';
 export const SET_TOTAL_TEXT = 'SET_TOTAL_TEXT';
 
+const url = '/api/v1/site';
 
 export function getAll(token) {
-	const url = 'http://localhost:8080';
-
 	return dispatch => {
 		dispatch({ type: GET_SITE_REQUEST });
 
-		return axios.get(url + '/api/v1/site')
+		return axios.get(url)
 					.then(res => {
 						dispatch({ type: GET_SITE_SUCCESS, data: res.data });
 					})
@@ -46,12 +45,10 @@ export function getAll(token) {
 }
 
 export function saveAll(site) {
-	const url = 'http://localhost:8080';
-
 	return dispatch => {
 		dispatch({ type: PUT_SITE_REQUEST });
 
-		return axios.put(url + '/api/v1/site', site)
+		return axios.put(url, site)
 					.then(res => {
 						dispatch({ type: PUT_SITE_SUCCESS });
 					})

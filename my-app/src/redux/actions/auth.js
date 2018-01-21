@@ -28,13 +28,13 @@ function loginError(message) {
 	};
 }
 
-export function loginUser(user) {
-	const url = 'http://localhost:8080';
+const url = '/admin/login';
 
+export function loginUser(user) {
 	return dispatch => {
 		dispatch(requestLogin());
 
-		return axios.post(url + '/admin/login', user)
+		return axios.post(url, user)
 					.then(res => {
 						let token = res.data.token;
 						dispatch(receiveLogin(token));
